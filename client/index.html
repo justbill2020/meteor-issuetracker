@@ -62,6 +62,7 @@
 
   <!-- JavaScript -->
   <script src="js/jquery-1.10.2.min.js"></script>            <!-- 1.10.2 -->
+  <script src="js/jquery.blockUI.min.js"></script>           <!-- 2.64.0 -->
   <script src="js/bootstrap.min.js"></script>                <!-- 2.3.2 -->
   <script src="js/wysihtml5-parser-rules-0.3.0.js"></script> <!-- 0.3.0 -->
   <script src="js/wysihtml5-0.3.0.min.js"></script>          <!-- 0.3.0 -->
@@ -69,9 +70,8 @@
   <script src="js/waypoints.min.js"></script>                <!-- 2.0.2 -->
   <script src="js/waypoints-sticky.min.js"></script>         <!-- 2.0.2 -->
   <script src="js/jquery.scrollTo.min.js"></script>          <!-- 1.4.5 BETA -->
-  <script src="js/jquery.blockUI.min.js"></script>           <!-- 2.64.0 -->
   <script src="js/date.f-0.5.0-min.js"></script>             <!-- 0.5.0 -->
-
+  
   <script type="text/javascript">
     $(document).ready(function() {
     
@@ -181,7 +181,7 @@
         </ul>
         {{/if}}
         <ul class="nav pull-right">
-          <li><a>{{loginButtons align="right"}}</a></li>
+          <li><a>{{> loginButtons align="right"}}</a></li>
         </ul>
       </div>
     </div>
@@ -387,19 +387,19 @@
         {{#if isProjectSelected}}
           <form>
             <fieldset>
-              {{#if isDebug}}
+              <!-- {{#if isDebug}}
                 <div class="controls controls-row">
                   <label><strong>Project _id</strong></label>
                   <input class="input-block-level" id="projectInfoDelete_Project_id" type="text" disabled>
                 </div>
                 <div class="controls controls-row">
                   <div class="btn-toolbar">
-              {{/if}}
+              {{/if}} -->
                     <button type="button" id="projectInfoDelete_DeleteProject" class="btn btn-danger pull-right">Delete Project <i class="icon-remove icon-white"></i></button>
-              {{#if isDebug}}
+              <!-- {{#if isDebug}}
                   </div>
                 </div>
-              {{/if}}
+              {{/if}} -->
             </fieldset>
           </form>
         {{/if}}
@@ -602,19 +602,19 @@
         {{#if isIssueSelected}}
           <form>
             <fieldset>
-              {{#if isDebug}}
+              <!-- {{#if isDebug}}
                 <div class="controls controls-row">
                   <label><strong>Issue _id</strong></label>
                   <input class="input-block-level" id="issueInfoDelete_Issue_id" type="text" disabled>
                 </div>
                 <div class="controls controls-row">
                   <div class="btn-toolbar">
-              {{/if}}
+              {{/if}} -->
                     <button type="button" id="issueInfoDelete_DeleteIssue" class="btn btn-danger pull-right">Delete Issue <i class="icon-remove icon-white"></i></button>
-              {{#if isDebug}}
+              <!-- {{#if isDebug}}
                   </div>
                 </div>
-              {{/if}}
+              {{/if}} -->
             </fieldset>
           </form>
         {{/if}}
