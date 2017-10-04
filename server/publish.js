@@ -1,3 +1,5 @@
+import {Meteor} from 'meteor/meteor'
+
 // Users and Roles
 Meteor.users.deny({
   insert: function (userId, doc) {

@@ -1,3 +1,5 @@
+import {Meteor} from 'meteor/meteor'
+import {Session} from 'meteor/session'
 // Define Minimongo collections to match server/publish.js.
 Projects = new Meteor.Collection("projects");
 Issues = new Meteor.Collection("issues");
@@ -27,12 +29,12 @@ function initMeteorSessionVariables() {
 Meteor.startup(function () {
   initMeteorSessionVariables(); // If a user was logged in from a previous session and returns, we need this here
   
-  $.blockUI.defaults.fadeIn = 0;
-  $.blockUI.defaults.fadeOut = 0;
-  $.blockUI.defaults.timeout = 0;
-  $.blockUI.defaults.message = null;
-  $.blockUI.defaults.css.border = "0px";
-  $.blockUI.defaults.overlayCSS.backgroundColor = "#fff";
+  // $.blockUI.defaults.fadeIn = 0;
+  // $.blockUI.defaults.fadeOut = 0;
+  // $.blockUI.defaults.timeout = 0;
+  // $.blockUI.defaults.message = null;
+  // $.blockUI.defaults.css.border = "0px";
+  // $.blockUI.defaults.overlayCSS.backgroundColor = "#fff";
 
   Deps.autorun(function () {
     if (Meteor.user()) {
